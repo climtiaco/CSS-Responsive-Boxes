@@ -1,3 +1,47 @@
+
+
 body {
   background: blanchedalmond;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.a {
+  border: dotted;
+  margin: .5em;
+  flex-grow: 1;
+}
+
+.b {
+  border: dotted;
+  margin: .5em;
+min-height: 60vh;
+ flex-grow: 2;
+}
+
+.c {
+  border: dotted;
+  margin: .5em;
+ flex-grow: 2;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a {
+    width: 100%;
+  }
+  .b {
+    max-width: 80%;
+  }
+  .c {
+    max-width: 20%;
+  }
 }
